@@ -16,8 +16,10 @@ public class EnglishGentleman {
     }
 
     public void read(Newspaper newspaper) {
-        monocle.readNewspaper(newspaper);
-        read = true;
+        Newspaper readNewspaper = monocle.read(newspaper);
+        if (readNewspaper != null) {
+            read = true;
+        }
     }
 
     public void smoke(Cigar cigar) {

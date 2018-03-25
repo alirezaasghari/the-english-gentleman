@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Monocle {
 
-    public void readNewspaper(Newspaper newspaper) {
-        newspaper.read();
+    public Newspaper read(Newspaper newspaper) {
+        return newspaper;
     }
 }
